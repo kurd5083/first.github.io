@@ -645,7 +645,6 @@ body {
   display: none;
 }
 
-
 .popup-content {
   box-sizing: border-box;
   position: relative;
@@ -719,8 +718,39 @@ body {
   line-height: 16px;
 }
 
-.radio label {
+.form-radio  {
+  display: inline-block;
+}
+
+.form-radio label {
   font-size: 13px;
+}
+
+.form-radio input[type=radio] {
+	display: none;
+}
+
+.form-radio label {
+	cursor: pointer;
+  margin-right: 17px;
+}
+
+.form-radio label::before {
+	content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+	background-image: url("../img/radio.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.form-radio input[type=radio]:checked + label:before {
+	background-image: url("../img/radio-focus.png");
+  background-repeat: no-repeat;
 }
 
 .input-themes {
