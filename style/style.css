@@ -642,8 +642,8 @@ body {
   height: 100%;
   width: 100%;
   top: 0;
-  display: none;
 }
+
 
 .popup-content {
   box-sizing: border-box;
@@ -747,6 +747,7 @@ body {
   vertical-align: middle;
   margin-right: 6px;
 }
+
 
 .form-radio input[type=radio]:checked + label:before {
 	background-image: url("../img/radio-focus.png");
